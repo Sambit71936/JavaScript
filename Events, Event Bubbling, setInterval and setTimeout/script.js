@@ -5,3 +5,11 @@ btn.addEventListener("click", ()=>{
     // alert("Your system is hacked")
     document.querySelector(".box").innerHTML = "<b> Click me!</b>";
 })
+
+btn.addEventListener("contextmenu", ()=>{
+    alert("Please dont press right click")
+})
+
+document.addEventListener("keydown", (e)=>{
+    console.log(e.key, e.keyCode)
+})
